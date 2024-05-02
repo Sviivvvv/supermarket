@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    min-height: 85Vh;
+    width: 100;
+    background-image: linear-gradient(to top, rgba(1, 2, 19, 0.559), rgba(10, 49, 177, 0.75)), url(./grocery-aisle-in-the-supermarket-wf8c9shpl8njq8zg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.page_indicator {
+    color: white;
+    position: absolute;
+    top: 63%;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+nav {
+    background: #161d6e;
+    height: auto;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 30%;
+    height: auto;
+    position: relative;
+    left: -50px;
+
+}
+
+.nav_bar_links {
+    float: right;
+
+
+
+}
+
+.nav_bar_links ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 10px 15px;
+    top: 60px;
+    right: -40px;
+
+}
+
+.nav_bar_links ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.nav_bar_links ul li ::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+
+}
+
+.nav_bar_links ul li :hover::after {
+    width: 100%;
+}
+
+.search_bar {
+    position: relative;
+    top: 60px;
+    right: 55px;
+
+}
+
+.search_input {
+    padding: 8px;
+    width: 255px;
+    border: 2px solid #f44336;
+    border-radius: 10px;
+
+
+}
+
+.search_btn {
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #f44336;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.store_info p {
+    background-color: #89CFF0;
+    color: #161d6e;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin: 5%;
+    font-size: 20px;
+
+}
+
+.store_info h2 {
+    padding-bottom: 20px;
+    color: #161d6e;
+    font-size: 40px;
+
+}
+
+
+
+.sub_section_one {
+    padding: 100px;
+    text-align: center;
+    font-size: 20px;
+
+
+
+}
+
+.home_decor img {
+    width: 30%;
+    height: auto;
+
+}
+
+.sub_section_two {
+    padding: 150px;
+    text-align: center;
+
+}
+
+.dicount_tag img {
+    width: 30%;
+    height: auto;
+    padding-bottom: 50px;
+
+}
+
+.sub_section_two h2 {
+
+    color: red;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+.store_discounts p {
+    background-color: #f44336;
+    padding: 15px 15px;
+    margin: 5%;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.sub_section_three {
+    padding: 150px;
+    text-align: center;
+
+}
+
+.tote img {
+    width: 30%;
+    height: auto;
+    padding-bottom: 50px;
+
+}
+
+.sub_section_three h2 {
+
+    color: #04a104;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+.store_tote p {
+    background-color: #60B45A;
+    padding: 15px 15px;
+    margin: 5%;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+
+}
+
+.sub_section_three {
+    padding-bottom: 200px;
+}
+
+footer {
+    background-color: #161d6e;
+    padding: 2% 6%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+
+
+
+}
+
+.contact_info {
+    position: relative;
+    left: -50px;
+}
+
+.contact_info h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+
+}
+
+.contact_info a {
+    font-size: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.contact_info a:after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+
+}
+
+.contact_info a:hover::after {
+    width: 100%
+}
+
+.newsletter_sub {
+    position: relative;
+    top: 14px;
+}
+
+.newsletter_input {
+    border: 2px solid #f44336;
+    border-radius: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+.newsletter_btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #f44336;
+    color: #FFFFFF;
+    border-radius: 10px;
+
+
+}
+
+.about_us {
+    text-align: center;
+    padding: 100px;
+    color: #161d6e;
+
+}
+
+.about_us h1 {
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.about_us p {
+    font-size: 20px;
+    background-color: #89CFF0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.containerA {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerA h1 {
+    color: #161d6e;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+iframe {
+    width: 60%;
+    height: 500px;
+}
+
+.map_description {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+
+}
+
+.colombo,
+.nugegoda {
+    width: calc(50% - 25px);
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    padding: 20px 9px;
+
+}
+
+.colombo h1,
+.nugegoda h1 {
+    padding-bottom: 15px;
+    color: #161d6e;
+    font-weight: 900;
+}
+
+.colombo p,
+.nugegoda p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.table {
+    text-align: center;
+    padding-top: 170px;
+    padding-bottom: 100px;
+}
+
+caption {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #161d6e;
+}
+
+.service_table {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #89CFF0;
+    color: #FFFFFF;
+    border-collapse: collapse;
+
+
+}
+
+th,
+td {
+    padding: 1rem;
+    border: 3px solid #FFFFFF;
+
+
+}
+
+th {
+    background-color: #161d6e;
+}
+
+.table h1 {
+    font-size: 40px;
+
+}
+
+.product_range {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0 -10px;
+    padding-bottom: 100px;
+
+}
+
+.products {
+    flex: 1;
+    text-align: center;
+    padding: 13px;
+}
+
+.products img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    max-width: 400px;
+    border-radius: 20px;
+
+}
+
+.products p {
+    padding-top: 10px;
+}
+
+.products a {
+    display: block;
+    text-decoration: none;
+}
+
+.products a:after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #f44336;
+    margin: auto;
+    display: block;
+    transition: 0.3s;
+
+
+}
+
+.products a:hover:after {
+    width: 50%;
+}
+
+.product_description {
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.product_description h1 {
+    padding-bottom: 20px;
+    color: #161d6e;
+    font-size: 40px;
+}
+
+.product_description p {
+    background-color: #89CFF0;
+    padding: 15px;
+    font-size: 17px;
+    border-radius: 20px;
+    margin: 5%;
+}
+
+.containerD {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    color: #161d6e;
+
+}
+
+.containerD img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.oder_link {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-weight: 600;
+}
+
+.oder_link a {
+
+    text-decoration: none;
+    position: relative;
+}
+
+.oder_link a:after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #f44336;
+    position: absolute;
+
+    bottom: -3px;
+    left: 50%;
+
+
+    transform: translateX(-50%);
+    transition: width 0.3s;
+
+}
+
+.oder_link a:hover::after {
+    width: 100%;
+}
+
+.dairy_products {
+    text-align: center;
+    padding-top: 150px;
+
+
+
+}
+
+.dairy_products h1 {
+    padding-bottom: 20px;
+    color: #161d6e;
+    font-size: 40px;
+}
+
+.dairy_products p {
+    background-color: #89CFF0;
+    padding: 15px;
+    font-size: 17px;
+    border-radius: 20px;
+    margin: 5%;
+
+}
+
+.vegetable_products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 200px;
+    padding: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.vegetable_products img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+
+
+}
+
+.vegetables {
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.grid_heading h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #161d6e;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.order_form input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
