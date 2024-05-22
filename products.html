@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supermarket</title>
+    <title>Supermarket|Product</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="fav/site.webmanifest">
+    <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -20,85 +27,110 @@
 
             <nav>
                 <div class="logo">
-                    <a href="index.html"><img src="./Orange and Gray Tag Cart Virtual Shop Logo.png"
-                            alt="Company Logo"></a>
-                    <div class="page_indicator">Product Page</div>
+
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Company Logo">
+                    </a>
+                    <div class="page_indicator">
+                        Product Page
+                    </div>
                 </div>
-                <div class="search_bar">
-                    <form>
-                        <input class="search_input" type="text" placeholder="Search..">
-                        <button type="submit" class="search_btn">Search Store</button>
-                    </form>
-                </div>
-                <div class="nav_bar_links">
+                <div class="nav-links">
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li><a href="./products.html">Products</a></li>
-                        <li><a href="loyaltyRegistration.html">Loyalty Club</a></li>
+                        <li><a href="./order.html">Order</a></li>
+                        <li><a href="./loyaltyRegistration.html">Loyalty</a></li>
+
                     </ul>
                 </div>
 
+
             </nav>
+
         </section>
 
     </header>
     <main>
-        <section class="product_description">
-            <h1> Our Available Product Range</h1>
-            <p>Indulge in freshness and quality with our diverse product range. From creamy dairy delights sourced from
-                local farms to a colorful array of fresh vegetables, our shelves are stocked with wholesome options to
-                cater to your culinary needs. Additionally, discover a world of beauty in our cosmetics and skincare
-                section, offering a curated selection of products to nourish and enhance your natural radiance. Whether
-                it's for a nutritious meal or a pampering self-care routine, our supermarket has everything you need for
-                a fulfilling experience.</p>
+        <div class="border">
+            <section class="product_description">
+                <h1> Our Available Product Range</h1>
+                <p>Indulge in freshness and quality with our diverse product range. From creamy dairy delights sourced
+                    from
+                    local farms to a colorful array of fresh vegetables, our shelves are stocked with wholesome options
+                    to
+                    cater to your culinary needs. Additionally, discover a world of beauty in our cosmetics and skincare
+                    section, offering a curated selection of products to nourish and enhance your natural radiance.
+                    Whether
+                    it's for a nutritious meal or a pampering self-care routine, our supermarket has everything you need
+                    for
+                    a fulfilling experience.</p>
 
-        </section>
-        <section class="products">
-            <div class="product_range">
-                <a href="./dairyProducts.html">
-                    <img src="./dairy_products_s_4x.jpg" atl="Dairy Products">
-                    <p>Dairy Products</p>
+            </section>
+            <section class="product-page-container">
+                <div class="product_range">
+                    <a href="./dairyProducts.html">
+                        <img src="images/prod-D.png" atl="Dairy Products">
+                        <p>Dairy</p>
 
-                </a>
-                <a href="./vegetables.html">
-                    <img src="./vegetable-storage-1673611626.jpeg" alt="Vegetables">
-                    <p>Vegetables</p>
+                    </a>
+                    <a href="./vegetables.html">
+                        <img src="images/prod-V.png" alt="Vegetables">
+                        <p>Vegetables</p>
 
-                </a>
-                <a href="./cosmeticsAndSkincare.html">
-                    <img src="./floating-face-powder-lipstick-cartoon-vector-icon-illustration-object-beauty-icon-isolated_138676-4703.jpg"
-                        alt="Cosmetics And Skincare">
-                    <p>Cosmetics And Skincare</p>
+                    </a>
+                    <a href="./cosmeticsAndSkincare.html">
+                        <img src="images/prod-C.png" alt="Cosmetics And Skincare">
+                        <p>Cosmetics And Skincare</p>
 
-                </a>
-            </div>
+                    </a>
+                </div>
 
-        </section>
+            </section>
+
+        </div>
 
     </main>
 
 
-    <section class="footer">
-        <footer>
-            <div class="contact_info">
-                <h3>
-                    Contact Us
-                </h3>
-                <a href="mailto:CB014855@students.apiit.lk">
-                    CB014855@students.apiit.lk
-                </a>
-            </div>
-            <div class="newsletter_sub">
-                <form>
-                    <label for="email">Subscribe To Our Newsletter:</label>
-                    <input class="newsletter_input" type="email" id="email" name="email" required>
-                    <button class="newsletter_btn" type="submit">Submit</button>
-                </form>
-            </div>
-        </footer>
 
-    </section>
+
+
+
+    <footer>
+        <div class="contact_info">
+
+            <P>
+                GroceryStore<br>
+                Phone: 000-000-0000<br>
+                Main Branch: 2, 69 Hyde Park Corner, Colombo 00200 <br><br>
+            </P>
+            <h3>
+                Contact Us:
+            </h3>
+
+            <a href="mailto:CB014855@students.apiit.lk">
+                CB014855@students.apiit.lk
+            </a>
+
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://x.com/?lang=en"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><img src="images/instagram.png"
+                    alt="Instagram"></a>
+        </div>
+        <div class="newsletter_sub">
+            <form>
+                <label for="email">Subscribe To Our Newsletter:</label>
+                <input class="newsletter_input" type="email" id="email" name="email" required>
+                <button class="newsletter_btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>

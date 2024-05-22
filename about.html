@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supermarket</title>
+    <title>Supermarket|About</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="fav/site.webmanifest">
+    <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -20,26 +27,28 @@
 
             <nav>
                 <div class="logo">
-                    <a href="index.html"><img src="./Orange and Gray Tag Cart Virtual Shop Logo.png"
-                            alt="Company Logo"></a>
-                    <div class="page_indicator">About Page</div>
+
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Company Logo">
+                    </a>
+                    <div class="page_indicator">
+                        About Page
+                    </div>
                 </div>
-                <div class="search_bar">
-                    <form>
-                        <input class="search_input" type="text" placeholder="Search..">
-                        <button type="submit" class="search_btn">Search Store</button>
-                    </form>
-                </div>
-                <div class="nav_bar_links">
+                <div class="nav-links">
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li><a href="./products.html">Products</a></li>
-                        <li><a href="loyaltyRegistration.html">Loyalty Club</a></li>
+                        <li><a href="./order.html">Order</a></li>
+                        <li><a href="./loyaltyRegistration.html">Loyalty</a></li>
+
                     </ul>
                 </div>
 
+
             </nav>
+
         </section>
 
     </header>
@@ -68,22 +77,45 @@
 
 
         </section>
-        <section class="map">
-            <div class="containerA">
+        <section>
+            <div class="map_heading">
                 <h1>Our Available Branches</h1>
-                <iframe src="https://my.atlist.com/map/e34121a4-53fe-498d-9924-1c6d3fc98307/?share=true"
-                    allow="geolocation 'self' https://my.atlist.com" width="100%" height="400px" loading="lazy"
-                    frameborder="0" scrolling="no" allowfullscreen id="atlist-embed"></iframe>
-
             </div>
+
+            <div class="containerA">
+
+
+
+                <div class="map">
+                    <h2>Colombo Branch</h2>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63373.801268944146!2d79.83415379154825!3d6.9070311815491205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596d1ad74587%3A0x7d97b8ffb265915e!2sArpico%20Supercentre!5e0!3m2!1sen!2slk!4v1714629567768!5m2!1sen!2slk"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map">
+                    <h2>Nugegoda Branch</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.156746765062!2d79.88703327475653!3d6.871814293126906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a443c8af07d%3A0xd643a09fd055728!2sArpico%20Showroom%20-%20Nugegoda!5e0!3m2!1sen!2slk!4v1714903447425!5m2!1sen!2slk"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+
             <div class="map_description">
                 <div class="colombo">
                     <h1> Our Colombo Branch</h1>
+                    <img src="images/Colombo.jpg" alt="picture of our colombo branch supermarket">
                     <p>
-                        Located in the heart of Colombo, our grocery store offers a vibrant shopping experience amidst
+                        Located in the heart of Colombo, our grocery store offers a vibrant shopping experience
+                        amidst
                         the bustling city life. Situated conveniently within reach of major landmarks and public
-                        transportation hubs, our store provides a diverse range of fresh produce, pantry staples, and
-                        specialty items. With a focus on quality and affordability, we cater to the diverse needs of the
+                        transportation hubs, our store provides a diverse range of fresh produce, pantry staples,
+                        and
+                        specialty items. With a focus on quality and affordability, we cater to the diverse needs of
+                        the
                         urban community, ensuring a seamless shopping experience for residents and visitors alike.
                     </p>
 
@@ -93,22 +125,26 @@
                     <h1>
                         Our Nugegoda Branch
                     </h1>
+                    <img src="images/Nugegoda.jpg" alt="picture of our nugegoda branch supermarket">
                     <p>
                         Nestled in the suburban charm of Nugegoda, our grocery store provides a tranquil shopping
                         environment away from the city's hustle and bustle. Surrounded by lush greenery and serene
                         residential neighborhoods, our store offers a curated selection of locally sourced fruits,
-                        vegetables, and household essentials. With ample parking and a welcoming ambiance, we strive to
+                        vegetables, and household essentials. With ample parking and a welcoming ambiance, we strive
+                        to
                         serve the close-knit community of Nugegoda with personalized service and top-notch products,
                         making grocery shopping a delightful experience for all.
                     </p>
 
                 </div>
             </div>
+
         </section>
         <section class="table">
             <h1>Our Available Services</h1>
+            <caption>A Sumary Of The Services We Offer🛒</caption>
             <table class="service_table">
-                <caption>A Sumary Of The Services We Offer🛒</caption>
+
                 <tr>
                     <th>Services</th>
                     <th>Description</th>
@@ -138,29 +174,44 @@
 
         </section>
 
+
     </main>
 
 
-    <section class="footer">
-        <footer>
-            <div class="contact_info">
-                <h3>
-                    Contact Us
-                </h3>
-                <a href="mailto:CB014855@students.apiit.lk">
-                    CB014855@students.apiit.lk
-                </a>
-            </div>
-            <div class="newsletter_sub">
-                <form>
-                    <label for="email">Subscribe To Our Newsletter:</label>
-                    <input class="newsletter_input" type="email" id="email" name="email" required>
-                    <button class="newsletter_btn" type="submit">Submit</button>
-                </form>
-            </div>
-        </footer>
 
-    </section>
+    <footer>
+        <div class="contact_info">
+
+            <P>
+                GroceryStore<br>
+                Phone: 000-000-0000<br>
+                Main Branch: 2, 69 Hyde Park Corner, Colombo 00200 <br><br>
+            </P>
+            <h3>
+                Contact Us:
+            </h3>
+
+            <a href="mailto:CB014855@students.apiit.lk">
+                CB014855@students.apiit.lk
+            </a>
+
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://x.com/?lang=en"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><img src="images/instagram.png"
+                    alt="Instagram"></a>
+        </div>
+        <div class="newsletter_sub">
+            <form>
+                <label for="email">Subscribe To Our Newsletter:</label>
+                <input class="newsletter_input" type="email" id="email" name="email" required>
+                <button class="newsletter_btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
