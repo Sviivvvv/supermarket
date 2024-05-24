@@ -1,9 +1,11 @@
 /* * {
     border: 1px red solid;
 } */
-
+/* Universal reset */
 * {
     box-sizing: border-box;
+    /* Ensures padding and border are included in element's total width and height */
+
 }
 
 body {
@@ -28,6 +30,7 @@ body {
     margin-top: 15%;
 }
 
+/* Navigation styles */
 nav {
     background: #161d6e;
     max-width: 100%;
@@ -87,6 +90,7 @@ nav {
 }
 
 
+/* Section styles */
 .sub_section_one,
 .sub_section_two,
 .sub_section_three {
@@ -104,6 +108,7 @@ nav {
 
 
 
+/* Paragraph styles */
 .sub_section_one p,
 .sub_section_two p,
 .sub_section_three p {
@@ -117,6 +122,7 @@ nav {
     font-size: 20px;
 }
 
+/* Background color for paragraphs */
 .sub_section_one p {
     background-color: rgba(137, 207, 240, 0.9);
 }
@@ -129,12 +135,14 @@ nav {
     background-color: rgba(0, 128, 0, 0.7);
 }
 
+/* Hover effect for paragraphs */
 .sub_section_one:hover p,
 .sub_section_two:hover p,
 .sub_section_three:hover p {
     opacity: 1;
 }
 
+/* Image container styles */
 .sub_section_one .home-img,
 .sub_section_two .home-img,
 .sub_section_three .home-img {
@@ -147,13 +155,15 @@ nav {
 
 }
 
+/* Adjust margin for image container on hover */
+
 .sub_section_one:hover .home-img,
 .sub_section_two:hover .home-img,
 .sub_section_three:hover .home-img {
     margin-bottom: 10px
 }
 
-
+/* Image styles */
 .sub_section_two .home-img img,
 .sub_section_three .home-img img {
     width: 30%;
@@ -172,7 +182,7 @@ nav {
     transition: width 0.8s ease, transform 0.8s ease;
 }
 
-
+/* Adjust image size and position on hover */
 .sub_section_one:hover .home-img img,
 .sub_section_two:hover .home-img img,
 .sub_section_three:hover .home-img img {
@@ -182,7 +192,7 @@ nav {
 
 }
 
-
+/* Section 1 styles */
 
 .sub_section_one {
 
@@ -195,7 +205,7 @@ nav {
 
 
 
-
+/* Heading styles */
 .sub_section_one h2,
 .sub_section_two h2,
 .sub_section_three h2 {
@@ -206,6 +216,7 @@ nav {
 
 }
 
+/* Adjust heading size and padding on hover */
 .sub_section_one:hover h2,
 .sub_section_two:hover h2,
 .sub_section_three:hover h2 {
@@ -214,6 +225,7 @@ nav {
 
 }
 
+/* Section 2 styles */
 .sub_section_two {
     border: 5px solid rgb(226, 78, 78);
     border-radius: 20px;
@@ -223,7 +235,7 @@ nav {
 
 
 
-
+/* Section 3 styles */
 .sub_section_three {
     border: 5px solid rgba(8, 146, 8, 0.608);
     border-radius: 20px;
@@ -232,6 +244,7 @@ nav {
 
 }
 
+/*home image roww styles*/
 .image-row {
     display: flex;
     justify-content: space-around;
@@ -281,6 +294,7 @@ nav {
     /* Darker shadow on hover for a "lifting" effect */
 }
 
+/*All ajustments for home page mobile view*/
 @media only screen and (min-width: 340px) and (max-width: 400px) {
 
 
@@ -418,7 +432,7 @@ nav {
 
 
 
-
+/*footer styles*/
 
 footer {
     background-color: #161d6e;
@@ -640,7 +654,7 @@ footer {
 
 }
 
-
+/*About us page styles*/
 
 .about_us {
     text-align: center;
@@ -674,6 +688,7 @@ footer {
 
 }
 
+/*Map images,iframs,paragraphs, heading and service table styles*/
 .map {
     min-width: 300px;
     flex: 1;
@@ -788,6 +803,8 @@ th {
     font-size: 40px;
 
 }
+
+/*mobile responsive styles for about page*/
 
 @media (max-width: 768px) {
     .about_us {
@@ -941,6 +958,7 @@ th {
 
 }
 
+/*product page styles*/
 .product_range {
     display: flex;
     flex-direction: row;
@@ -1021,6 +1039,8 @@ th {
     margin: 5%;
 }
 
+/*product page mobile responisve styles*/
+
 @media (max-width: 480px) {
     .product_range {
         flex-direction: column;
@@ -1082,6 +1102,9 @@ th {
 }
 
 
+/*Dairy page styles*/
+
+
 
 .containerD img {
     width: 90%;
@@ -1110,6 +1133,7 @@ th {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
 }
 
+/*dairy page paras and vegetable page para styles*/
 .product_d p,
 .vegetables p {
     margin: 10px;
@@ -1119,21 +1143,9 @@ th {
     color: #161d6e;
 }
 
+/*dairy page and vegetable page button styles*/
 .product_d button,
 .vegetables button {
-    cursor: pointer;
-    width: 60%;
-    height: 25px;
-    background-color: #ffffff;
-    color: #050a48;
-    justify-content: center;
-    margin-top: 5px;
-    border-radius: 10px;
-    font-weight: 600;
-
-}
-
-.cos-btn button {
     cursor: pointer;
     width: 60%;
     height: 25px;
@@ -1154,6 +1166,21 @@ th {
 
 }
 
+/*cosmetic button page styles*/
+.cos-btn button {
+    cursor: pointer;
+    width: 60%;
+    height: 25px;
+    background-color: #ffffff;
+    color: #050a48;
+    justify-content: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+
+}
+
+
 .cos-btn button:hover {
     background-color: #89CFF0;
     color: #161d6e;
@@ -1161,6 +1188,7 @@ th {
 
 }
 
+/*mobile responsive styles for cosmetics add to cart button*/
 @media (max-width: 768px) {
     .cos-btn button {
         width: 100%;
@@ -1177,7 +1205,7 @@ th {
     }
 }
 
-
+/*order button styles*/
 
 .order_link {
     padding-top: 5%;
@@ -1230,7 +1258,7 @@ th {
 }
 
 
-
+/*Dairy,Vegetables,Cosmetics heading styles*/
 .dairy_products,
 .Vege-h,
 .Cos-h {
@@ -1249,6 +1277,7 @@ th {
     font-size: 40px;
 }
 
+/*Dairy products para styles*/
 .dairy_products p {
     background-color: #89CFF0;
     padding: 15px;
@@ -1258,6 +1287,7 @@ th {
 
 }
 
+/*mobile responsive styles*/
 @media (max-width: 480px) {
 
 
@@ -1310,6 +1340,7 @@ th {
 
 }
 
+/*vegeatble page styles*/
 .vegetable-info {
 
 
@@ -1374,6 +1405,7 @@ th {
 
 }
 
+/*vegetable page mobile responsive styles*/
 @media (max-width: 480px) {
     .vegetable-info {
         margin: 10px;
@@ -1440,6 +1472,7 @@ th {
     }
 }
 
+/*order page styles*/
 .container {
     background-color: #f2f2f2;
     padding: 5px 20px 15px 20px;
@@ -1499,6 +1532,7 @@ label.payment_label {
     margin: 10px 0 5px;
 }
 
+/*order/loyalty page mobile responsive page styles*/
 @media (max-width: 768px) {
 
     .order-card,
@@ -1539,7 +1573,7 @@ label.payment_label {
     }
 }
 
-
+/*cosmetics page styles*/
 .cosmetic-table {
     width: 100%;
     border: 1px solid black;
@@ -1599,6 +1633,7 @@ td {
     overflow-x: auto;
 }
 
+/*Cosmetic page mobile responsive styles styles*/
 @media (max-width: 768px) {
     .cosmetic-table {
         width: 100%;
@@ -1631,7 +1666,7 @@ td {
     }
 }
 
-
+/*loyalty page styles*/
 .loyalty {
     display: flex;
     justify-content: center;
@@ -1672,6 +1707,7 @@ p {
     font-weight: 500;
 }
 
+/*loyalty page mobile responsive styles*/
 @media (max-width: 768px) {
     .loyalty-card {
         width: 100%;
