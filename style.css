@@ -366,6 +366,10 @@ nav {
         padding: 5px 9px;
     }
 
+    .sub_section_one p {
+        margin-top: -50px;
+    }
+
     .sub_section_one .home-img img {
         width: 300px;
         transform: translateY(-150%);
@@ -395,6 +399,7 @@ nav {
     .sub_section_one:hover h2,
     .sub_section_two:hover h2,
     .sub_section_three:hover h2 {
+        text-align: center;
         font-size: 20px;
     }
 
