@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supermarket|Order</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,6 +18,8 @@
     <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <script src="main.js" async></script>
+
 
 </head>
 
@@ -53,51 +55,433 @@
 
     </header>
     <main>
-        <section>
-            <div class="order-card">
-                <label class="title">Checkout Information</label>
-                <form class="form">
-                    <input type="text" placeholder="Full Name" class="input_field">
-                    <input type="text" placeholder="Address" class="input_field">
-                    <input type="text" placeholder="Email" class="input_field">
-                    <input type="text" placeholder="Phone Number" class="input_field">
 
-                    <label class="payment_label">Payment Options</label>
-                    <div>
-                        <input type="radio" id="credit_card" name="payment_method" value="credit_card">
-                        <label for="credit_card">Credit Card</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="bank_transfer" name="payment_method" value="bank_transfer">
-                        <label for="bank_transfer">Bank Transfer</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="COD" name="payment_method" value="COD">
-                        <label for="COD">Cash on Delivery</label>
-                    </div>
+        <section class="fruitSectiion">
+            <h1 class="sectionh1">Fruit Section</h1>
+            <div class="fruit-conatiner">
 
-                    <button type="submit">Submit Info</button>
-                </form>
-            </div>
+                <div class="fruit-card">
+                    <img src="images/banana.png" alt="Banana">
+                    <p class="itemName">Banana</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">360</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
 
-            <div class="order-card">
-                <label class="title">Apply Coupons</label>
-                <form class="form">
-                    <input type="text" placeholder="Enter coupon code" class="input_field">
-                    <button type="button">Apply</button>
-                </form>
-            </div>
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
 
-            <div class="order-card">
-                <label class="title">Order Summary</label>
-                <div class="details">
-                    <span>Items Total: $89.99</span>
-                    <span>Shipping: $5.99</span>
-                    <span>Tax: $8.10</span>
-                    <span>Total: $104.08</span>
                 </div>
-                <button class="checkout-btn">Order Now</button>
+                <div class="fruit-card">
+                    <img src="images/strawberry.png" alt="Strawberry">
+                    <p class="itemName">Strawberry
+                    <p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">907</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+
+
+                </div>
+                <div class="fruit-card">
+                    <img src="images/Apple.png" alt="Apple">
+                    <p class="itemName">Apple</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">427</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+
+                </div>
+                <div class="fruit-card">
+                    <img src="images/DragonFruit.png" alt="Dragon Fruit">
+                    <p class="itemName">Dragon Fruit</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">2434</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+                </div>
+                <div class="fruit-card">
+                    <img src="images/Grapes.png" alt="Grapes">
+                    <p class="itemName">Grapes</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">600</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+                </div>
+                <div class="fruit-card">
+                    <img src="images/papaya.png" alt="Papaya">
+                    <p class="itemName">Papaya</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">350</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+
+
             </div>
+
+
+        </section>
+        <section class="vegetableSection">
+            <h1 class="sectionh1">Vegetable Section</h1>
+            <div class="vegetable-container">
+                <div class="veg-card">
+                    <img src="images/carrot.png" alt="Carrots">
+                    <p class="itemName">Carrots</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">800</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="veg-card">
+                    <img src="images/onion.png" alt="Onions">
+                    <p class="itemName">Onions</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">550</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="veg-card">
+                    <img src="images/tomato.png" alt="Tomatos">
+                    <p class="itemName">Tomatoes</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">450</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="veg-card">
+                    <img src="images/lettuce.png" alt="Lettuce">
+                    <p class="itemName">Lettuce</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">1050</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="veg-card">
+                    <img src="images/cucumber.png" alt="Cucumber">
+                    <p class="itemName">Cucumber</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">450</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="veg-card">
+                    <img src="images/Broccoli.png" alt="Broccoli">
+                    <p class="itemName">Broccoli</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">850</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+
+        </section>
+        <section calss="dairy-section">
+            <h1 class="sectionh1">Dairy Section</h1>
+            <div class="dairy-container">
+
+                <div class="dairy-card">
+                    <img src="images/butterK.png" alt="Butter">
+                    <p class="itemName">Butter</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">450</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Oty</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="dairy-card">
+                    <img src="images/cheese.png" alt="Rich life processed cheese">
+                    <p class="itemName">Processed cheese</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">1200</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Oty</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+                </div>
+                <div class="dairy-card">
+                    <img src="images/HappyCowCheese.png" alt="Happy Cow Cheese">
+                    <p class="itemName">Happy Cow Cheese</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">1300</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Oty</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+                </div>
+                <div class="dairy-card">
+                    <img src="images/setYogurtt.png" alt="Kotmale Set Yogurt">
+                    <p class="itemName">Set Yogurt</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">200</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Oty</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="dairy-card">
+                    <img src="images/freshmilkk.png" alt="Kotmale full cream fresh milk">
+                    <p class="itemName">Full Cream Fresh Milk</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">220</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Oty</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+                </div>
+                <div class="dairy-card">
+                    <img src="images/CookieDoughIcecream.png" alt="Cookie Dough Ice Cream">
+                    <p class="itemName">Cookie Dough Ice Cream</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">1200</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Oty</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+        </section>
+        <section class=" meatAndFish-section ">
+            <h1 class="sectionh1">Meat and Fish Section</h1>
+            <div class="meatAndFish-container">
+                <div class="meatAndFish-card">
+                    <img src="images/chicken.png" alt="Chicken">
+                    <p class="itemName">Chicken</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">2116</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="meatAndFish-card">
+                    <img src="images/beef.png" alt="Beef">
+                    <p class="itemName">Beef</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">2800</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+                </div>
+                <div class="meatAndFish-card">
+                    <img src="images/tuna.png" alt="Tuna">
+                    <p class="itemName">Tuna</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">1500</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+                </div>
+                <div class="meatAndFish-card">
+                    <img src="images/squid.png" alt="Squid">
+                    <p class="itemName">Squid</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">3000</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="meatAndFish-card">
+                    <img src="images/mutton.png" alt="Mutton">
+                    <p class="itemName">Mutton</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">4500</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="meatAndFish-card">
+                    <img src="images/shrimp.png" alt="Shrimp">
+                    <p class="itemName">Shrimp</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">2400</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Kg</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+                </div>
+            </div>
+
+        </section>
+        <section class=" bakingCookingIng-section">
+            <h1 class="sectionh1">Baking and Cooking Section</h1>
+            <div class="bakingCooking-container">
+
+                <div class="bakingCooking-card">
+                    <img src="images/Flour.png" alt="Flour">
+                    <p class="itemName">Flour</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">500</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Oty</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="bakingCooking-card">
+                    <img src="images/Vanilla.png" alt="Vanilla Extract">
+                    <p class="itemName">Vanilla Extract</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">1000</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Oty</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+
+
+                </div>
+                <div class="bakingCooking-card">
+                    <img src="images/sugar.png" alt="Sugar">
+                    <p class="itemName">Sugar</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">300</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Oty</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+                </div>
+                <div class="bakingCooking-card">
+                    <img src="images/choc.png" alt="Melting Choclate">
+                    <p class="itemName">Melting Choclate</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">900</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Oty</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+
+                </div>
+                <div class="bakingCooking-card">
+                    <img src="images/olive oil.png" alt="Olive Oil">
+                    <p class="itemName">Olive Oil</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">2400</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Oty</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+                </div>
+                <div class="bakingCooking-card">
+                    <img src="images/baking-powder.png" alt="Baking Powder">
+                    <p class="itemName">Baking Powder</p>
+                    <p class="itemPriceSection">
+                        <span class="itemCurrency">Rs.</span>
+                        <span class="itemPrice">200</span>
+                    </p>
+                    <input type="number" class="numItem" value="0" min="0">
+                    <label>Oty</label>
+                    <button id="addBtn" class="cartBtn" onclick="addToCart(this)">Add to Cart</button>
+
+                </div>
+            </div>
+
+
+        </section>
+        <section class="orderCart">
+            <h1 class="sectionh1">Order Cart Section
+        </section>
+        </h1>
+
+        <table id="orderTable">
+            <caption>Item Cart</caption>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Qty (Kg)</th>
+                    <th>Price (Rs)</th>
+                    <th>Total (Rs)</th>
+                </tr>
+            </thead>
+            <tbody id="orderBody">
+
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total (Rs)</td>
+
+                    <td id="totalPrice">0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        </section>
+        <section class="orderBtns">
+            <button onclick="window.location.href='checkOut.html';">Pay Now</button>
+            <button onclick="addFavourite()">Add to Favourite</button>
+            <button onclick="applyFavourite()">Apply Favourites</button>
+            <button onclick="emptyCart()">Empty Cart</button>
         </section>
     </main>
 

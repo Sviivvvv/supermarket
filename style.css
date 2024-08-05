@@ -1106,7 +1106,8 @@ th {
 
 
 
-.containerD img {
+.containerD img,
+.fruit-card img {
     width: 90%;
     height: 180px;
     object-fit: contain;
@@ -1114,7 +1115,8 @@ th {
     margin: auto
 }
 
-.containerD {
+.containerD,
+.fruit-conatiner {
 
     display: flex;
     gap: 20px;
@@ -1124,7 +1126,8 @@ th {
 
 }
 
-.product_d {
+.product_d,
+.fruit-card {
     width: 300px;
     border: 1px solid #eeee;
     background-color: #ffffff;
@@ -1532,6 +1535,12 @@ label.payment_label {
     margin: 10px 0 5px;
 }
 
+.expiration-security-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /*order/loyalty page mobile responsive page styles*/
 @media (max-width: 768px) {
 
@@ -1552,6 +1561,7 @@ label.payment_label {
         padding: 15px;
     }
 }
+
 
 @media (max-width: 480px) {
     .title {
